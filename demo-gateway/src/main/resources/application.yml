@@ -1,0 +1,43 @@
+server:
+  port: 8074
+
+#Eureka注册中心配置
+#registry-fetch-interval-seconds表示eureka client间隔多久去拉取服务注册信息，默认为30秒
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8071/eureka/
+    registry-fetch-interval-seconds: 10
+  instance:
+    prefer-ip-address: true
+
+#路由配置
+spring:
+  application:
+    name: demo-gateway
+  cloud:
+    gateway:
+
+#方式1：通过predicate路由规则转发
+#      routes:
+##http://127.0.0.1:8074/web1/module1/hello?id=1
+#      - id: web1_route
+#        uri: http://127.0.0.1:8072
+#        predicates:
+#          - Path=/web1/**
+##http://127.0.0.1:8074/web2/module3/query?id=1
+#      - id: web2_route
+#        uri: http://127.0.0.1:8075
+#        predicates:
+#          - Path=/web2/**
+
+#方式2：通过service-id转发（建议）
+#不配置的方式也能转发，有用过Zuul的同学肯定都知道，Zuul默认会为所有服务都进行转发操作，
+#只需要在访问路径上指定要访问的服务即可，通过这种方式就不用为每个服务都去配置转发规则，
+#当新加了服务的时候，不用去配置路由规则和重启网关。
+#http://127.0.0.1:8074/demo-web/web1/module1/hello?id=1
+#http://127.0.0.1:8074/demo-web2/web2/module3/query?id=1
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
