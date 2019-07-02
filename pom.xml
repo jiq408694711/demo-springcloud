@@ -58,6 +58,30 @@
             <version>3.9</version>
         </dependency>
 
+        <!-- openJDK11 error：java.lang.TypeNotPresentException: Type javax.xml.bind.JAXBContext not present -->
+        <!-- jaxb error begin -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.bind</groupId>
+            <artifactId>jaxb-impl</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+            <version>2.3.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.activation</groupId>
+            <artifactId>activation</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+        <!-- jaxb error end -->
+
     </dependencies>
 
     <dependencyManagement>
