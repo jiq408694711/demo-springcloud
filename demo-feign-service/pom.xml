@@ -9,19 +9,18 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-web</artifactId>
+    <artifactId>demo-feign-service</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>com.xx.jiq</groupId>
-            <artifactId>demo-web-starter</artifactId>
+            <artifactId>demo-feign-client</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.xx.jiq</groupId>
-            <artifactId>demo-feign-client</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
     </dependencies>
@@ -34,5 +33,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

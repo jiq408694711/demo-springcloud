@@ -4,12 +4,14 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>demo-service</module>
+        <module>demo-feign-service</module>
         <module>demo-web</module>
         <module>eureka-server</module>
-        <module>demo-common</module>
+        <module>demo-starter</module>
         <module>demo-gateway</module>
         <module>demo-web2</module>
+        <module>demo-dubbo-service</module>
+        <module>demo-client</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
