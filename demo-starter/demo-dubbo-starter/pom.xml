@@ -3,19 +3,22 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>demo-springcloud</artifactId>
-        <groupId>com.example.jiq</groupId>
+        <artifactId>demo-starter</artifactId>
+        <groupId>com.xx.jiq</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>demo-dubbo-service</artifactId>
+    <artifactId>demo-dubbo-starter</artifactId>
+    <groupId>com.xx.jiq</groupId>
+    <version>0.0.1-SNAPSHOT</version>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.alibaba.boot/dubbo-spring-boot-starter -->
         <dependency>
-            <groupId>com.xx.jiq</groupId>
-            <artifactId>demo-dubbo-starter</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.1.RELEASE</version>
         </dependency>
 
     </dependencies>

@@ -16,6 +16,7 @@
     <modules>
         <module>demo-web-starter</module>
         <module>demo-common-starter</module>
+        <module>demo-dubbo-starter</module>
     </modules>
 
 </project>
