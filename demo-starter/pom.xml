@@ -19,6 +19,7 @@
         <module>demo-dubbo-starter</module>
         <module>demo-redis-starter</module>
         <module>demo-mq-starter</module>
+        <module>demo-webflux-starter</module>
     </modules>
 
 </project>
