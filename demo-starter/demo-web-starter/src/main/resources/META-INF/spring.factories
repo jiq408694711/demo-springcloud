@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xx.sbc.common.SpringMvcConfiguration,\
+com.xx.sbc.common.swagger.SwaggerConfiguration,\
+com.xx.sbc.common.filter.FilterConfig

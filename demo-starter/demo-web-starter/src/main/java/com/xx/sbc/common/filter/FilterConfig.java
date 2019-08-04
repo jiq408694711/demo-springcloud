@@ -1,4 +1,4 @@
-package com.xx.sbc;
+package com.xx.sbc.common.filter;
 
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package com.xx.sbc;
+package com.xx.sbc.common.filter;
 
 import javax.servlet.*;
 import javax.servlet.FilterConfig;
