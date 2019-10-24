@@ -1,4 +1,4 @@
-package com.xx.sbc.web1.response;
+package com.xx.sbc.facade;
 
 import java.io.Serializable;
 

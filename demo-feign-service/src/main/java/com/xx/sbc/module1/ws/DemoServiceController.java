@@ -4,9 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.xx.sbc.web1.facade.DemoServiceFacade;
 import com.xx.sbc.web1.response.HelloResponse;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by jiyiqin on 2019/6/29.
@@ -18,11 +16,11 @@ public class DemoServiceController implements DemoServiceFacade {
 
     @Override
     @GetMapping("/get")
-    public HelloResponse get(Long id) {
+    public HelloResponse get(@RequestParam("id") Long id) {
         HelloResponse response = new HelloResponse();
         response.setName("hello sbc-id-" + id);
         response.setAge(18);
-        LOGGER.info("response: {}", JSON.toJSONString(response));
+//        LOGGER.info("response: {}", JSON.toJSONString(response));
         return response;
     }
 }

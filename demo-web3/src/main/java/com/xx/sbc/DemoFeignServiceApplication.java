@@ -5,18 +5,15 @@ import com.xx.sbc.web2.utils.FeignClientManager;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-//import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-//import org.springframework.cloud.netflix.hystrix.EnableHystrix;
-//import org.springframework.cloud.openfeign.EnableFeignClients;
 
+/**
+ * 本项目演示非springboot项目通过原生eureka+ribbon+feign访问springboot项目
+ */
 @SpringBootApplication
-//@EnableDiscoveryClient
-//@EnableFeignClients
-//@EnableHystrix
-public class DemoWebApplication {
+public class DemoFeignServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoWebApplication.class, args);
+        SpringApplication.run(DemoFeignServiceApplication.class, args);
     }
 
     @Bean
