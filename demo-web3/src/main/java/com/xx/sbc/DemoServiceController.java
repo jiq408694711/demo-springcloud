@@ -26,10 +26,6 @@ public class DemoServiceController implements DemoServiceFacade {
     @Override
     @GetMapping("/get")
     public HelloResponse get(@RequestParam("id") Long id) {
-//        HelloResponse response = new HelloResponse();
-
-//        String availableServerUrl = RibbonClientManager.getManager().getAvailableServerUrl("demo-feign-service");
-//        System.out.println(availableServerUrl);
         HelloRequest request = new HelloRequest();
         request.setName("availableServerUrl");
         return web2ServiceFacade.add(request);

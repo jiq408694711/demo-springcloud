@@ -40,41 +40,6 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core -->
-<!--        <dependency>-->
-<!--            <groupId>com.netflix.feign</groupId>-->
-<!--            <artifactId>feign-core</artifactId>-->
-<!--            <version>8.18.0</version>-->
-<!--        </dependency>-->
-
-<!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.netflix.feign/feign-jackson &ndash;&gt;-->
-<!--        <dependency>-->
-<!--            <groupId>com.netflix.feign</groupId>-->
-<!--            <artifactId>feign-jackson</artifactId>-->
-<!--            <version>8.18.0</version>-->
-<!--        </dependency>-->
-
-<!--        <dependency>-->
-<!--            <groupId>com.netflix.feign</groupId>-->
-<!--            <artifactId>feign-okhttp</artifactId>-->
-<!--            <version>8.18.0</version>-->
-<!--        </dependency>-->
-
-        <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-core -->
-<!--        <dependency>-->
-<!--            <groupId>io.github.openfeign</groupId>-->
-<!--            <artifactId>feign-core</artifactId>-->
-<!--            <version>10.5.1</version>-->
-<!--        </dependency>-->
-
-        <!-- https://mvnrepository.com/artifact/io.github.openfeign/feign-jackson -->
-<!--        <dependency>-->
-<!--            <groupId>io.github.openfeign</groupId>-->
-<!--            <artifactId>feign-jackson</artifactId>-->
-<!--            <version>10.5.1</version>-->
-<!--        </dependency>-->
-
-
-        <!-- https://mvnrepository.com/artifact/com.netflix.feign/feign-core -->
         <dependency>
             <groupId>com.netflix.feign</groupId>
             <artifactId>feign-core</artifactId>
@@ -87,8 +52,6 @@
             <artifactId>feign-jackson</artifactId>
             <version>8.18.0</version>
         </dependency>
-
-
 
         <!-- https://mvnrepository.com/artifact/com.netflix.ribbon/ribbon-core -->
         <dependency>
